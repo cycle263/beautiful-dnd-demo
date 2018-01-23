@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+.data-content {
+  margin-left: 64px;
+  padding: 24px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.data-item {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+.data-item > label {
+  float: left;
+  line-height: 28px;
+  font-size: 13px;
+}
+.data-inputs {
+  display: flex;
+  justify-content: flex-start;
+}
+.data-inputs div {
+  display: inline-block;
+}
+.data-inputs> label, .data-inputs> .lable {
+  width: 356px;
+  display: inline-block;
+  text-align: left;
+  line-height: 36px;
+}
+.data-inputs> label> span {
+  width: 150px;
+  display: inline-block;
+  text-align: right;
+}
+.data-inputs> label> span .anticon-question-circle-o {
+  vertical-align: initial;
+}
+.exampleBox {
+  position: absolute;
+  margin-left: 5px;
+}
+.exampleBox > .ant-upload-list {
+  position: absolute;
+  left: 130px;
+  top: -5px;
+}
+.ant-input, .ant-select {
+  width: 200px;
+  display: inline-block;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

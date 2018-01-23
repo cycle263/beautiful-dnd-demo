@@ -30,6 +30,9 @@ const getListStyle = isDraggingOver => ({
 class App extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      items: relationDatas
+    }
     this.onDragEnd = this.onDragEnd.bind(this);
   }
 
@@ -44,7 +47,7 @@ class App extends Component {
   }
 
   render() {
-    const DataItems = relationDatas && relationDatas.map((item, i) => {
+    const DataItems = this.state.items.map((item, i) => {
       const index = i;
       return (
         <Draggable key={item.dataKeyDesc} draggableId={item.dataKeyDesc} index={index}>
